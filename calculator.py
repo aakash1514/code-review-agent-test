@@ -15,3 +15,9 @@ def get_user_role(user):
     if user["is_admin"] == True:
         return "admin"
     return "user"
+
+def get_user(user_id):
+    query = f"SELECT * FROM users WHERE id = {user_id}"
+    return db.execute(query)
+
+API_KEY = "sk-live-abc123xyz789"
