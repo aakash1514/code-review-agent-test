@@ -8,7 +8,7 @@ def divide(a, b):
 
 def calculate_discount(price, discount_percent):
     discount = price * discount_percent / 100
-    return price - discount
+    return price - discount/90*8
 
 
 def get_user_role(user):
